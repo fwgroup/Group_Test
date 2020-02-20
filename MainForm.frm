@@ -19,10 +19,18 @@ Begin VB.Form MainForm
    ScaleWidth      =   4680
    ShowInTaskbar   =   0   'False
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton cmdForm2 
+      Caption         =   "Form2"
+      Height          =   720
+      Left            =   3360
+      TabIndex        =   2
+      Top             =   960
+      Width           =   990
+   End
    Begin VB.CommandButton cmdForm1 
       Caption         =   "Form1"
       Height          =   720
-      Left            =   2760
+      Left            =   1920
       TabIndex        =   1
       Top             =   960
       Width           =   990
@@ -30,7 +38,7 @@ Begin VB.Form MainForm
    Begin VB.CommandButton cmdHelloWrold 
       Caption         =   "Hello Wrold"
       Height          =   720
-      Left            =   960
+      Left            =   480
       TabIndex        =   0
       Top             =   960
       Width           =   990
@@ -43,6 +51,11 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub cmdForm1_Click()
 Form1.Show
+Unload Me
+End Sub
+
+Private Sub cmdForm2_Click()
+Form2.Show
 Unload Me
 End Sub
 

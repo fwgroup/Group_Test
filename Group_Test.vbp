@@ -2,6 +2,7 @@ Type=Exe
 Form=MainForm.frm
 Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\WINDOWS\system32\stdole2.tlb#OLE Automation
 Form=Form1.frm
+Form=Form2.frm
 IconForm="MainForm"
 Startup="MainForm"
 HelpFile=""

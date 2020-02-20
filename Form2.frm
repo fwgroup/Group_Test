@@ -1,6 +1,6 @@
 VERSION 5.00
-Begin VB.Form Form1 
-   Caption         =   "Form1"
+Begin VB.Form Form2 
+   Caption         =   "Form2"
    ClientHeight    =   3090
    ClientLeft      =   60
    ClientTop       =   450
@@ -14,31 +14,31 @@ Begin VB.Form Form1
       Italic          =   0   'False
       Strikethrough   =   0   'False
    EndProperty
-   LinkTopic       =   "Form1"
+   LinkTopic       =   "Form2"
    ScaleHeight     =   3090
    ScaleWidth      =   4680
    ShowInTaskbar   =   0   'False
    StartUpPosition =   3  'Windows Default
-   Begin VB.CommandButton cmdForm2 
-      Caption         =   "Form2"
+   Begin VB.CommandButton cmdForm1 
+      Caption         =   "Form1"
       Height          =   720
-      Left            =   2400
+      Left            =   2280
       TabIndex        =   2
-      Top             =   1800
+      Top             =   1440
       Width           =   990
    End
    Begin VB.CommandButton cmdMainForm 
       Caption         =   "MainForm"
       Height          =   720
-      Left            =   1200
+      Left            =   960
       TabIndex        =   1
-      Top             =   1800
+      Top             =   1440
       Width           =   990
    End
-   Begin VB.Label lblForm1 
+   Begin VB.Label lblForm2 
       AutoSize        =   -1  'True
       BackStyle       =   0  'Transparent
-      Caption         =   "Form1"
+      Caption         =   "Form2"
       BeginProperty Font 
          Name            =   "Tahoma"
          Size            =   27.75
@@ -49,19 +49,19 @@ Begin VB.Form Form1
          Strikethrough   =   0   'False
       EndProperty
       Height          =   675
-      Left            =   1560
+      Left            =   1440
       TabIndex        =   0
-      Top             =   960
+      Top             =   480
       Width           =   1545
    End
 End
-Attribute VB_Name = "Form1"
+Attribute VB_Name = "Form2"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-Private Sub cmdForm2_Click()
-Form2.Show
+Private Sub cmdForm1_Click()
+Form1.Show
 Unload Me
 End Sub
 
